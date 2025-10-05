@@ -8,7 +8,7 @@ public class MovementControllerMB : MonoBehaviour
     private Rigidbody2D _rigidbody;
 
     private Vector2 _velocity;
-    
+
     private void Awake()
     {
         _rigidbody = GetComponent<Rigidbody2D>();
@@ -21,6 +21,11 @@ public class MovementControllerMB : MonoBehaviour
 
     public void Move(Vector2 direction)
     {
-        _velocity = direction.normalized * speed;
+        direction.Normalize();
+        _velocity = direction * speed;
+        if (direction.x > 0)
+            transform.localScale = new(-1.0f, 1.0f, 1.0f);
+        else if (direction.x < 0)
+            transform.localScale = new(1.0f, 1.0f, 1.0f);
     }
 }
