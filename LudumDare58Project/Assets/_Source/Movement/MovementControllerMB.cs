@@ -24,8 +24,8 @@ public class MovementControllerMB : MonoBehaviour
         direction.Normalize();
         _velocity = direction * speed;
         if (direction.x > 0)
-            transform.localScale = new(-1.0f, 1.0f, 1.0f);
-        else if (direction.x < 0)
             transform.localScale = new(1.0f, 1.0f, 1.0f);
+        else if (direction.x < 0)
+            transform.localScale = new(-1.0f, 1.0f, 1.0f);
     }
 }
