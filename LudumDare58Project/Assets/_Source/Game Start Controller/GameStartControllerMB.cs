@@ -7,6 +7,6 @@ public class GameStartControllerMB : MonoBehaviour
 
     private void Start()
     {
-        OnGameStart.Invoke();
+        OnGameStart?.Invoke();
     }
 }

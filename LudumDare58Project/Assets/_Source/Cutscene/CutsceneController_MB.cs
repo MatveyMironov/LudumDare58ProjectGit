@@ -9,11 +9,6 @@ public class CutsceneController_MB : MonoBehaviour
 
     private Coroutine _playingCutscene;
 
-    private void Start()
-    {
-        StartCutscene();
-    }
-
     public void StartCutscene()
     {
         if (_playingCutscene != null)
