@@ -12,7 +12,6 @@ public class CollectionReviewerMB : MonoBehaviour
         foreach (var collectableItem in requiredItems)
             if (!reviewedCollection.CollectedItems.Contains(collectableItem))
                 return;
-
         OnCollectionSucessfullyReviewed.Invoke();
     }
 }

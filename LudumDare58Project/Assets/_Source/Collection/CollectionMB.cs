@@ -12,7 +12,7 @@ public class CollectionMB : MonoBehaviour
 
     public void CollectItem(CollectableItemSO collectedItem)
     {
-        if (CollectedItems.Add(collectedItem))
+        if (_collectedItems.Add(collectedItem))
             OnItemCollected?.Invoke(collectedItem);
     }
 }
