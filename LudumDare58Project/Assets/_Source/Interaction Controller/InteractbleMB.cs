@@ -8,16 +8,22 @@ public class InteractbleMB : MonoBehaviour
 
     public void ShowInteraction()
     {
+        if (!isActiveAndEnabled)
+            return;
         interactionIndicator.SetActive(true);
     }
 
     public void HideInteraction()
     {
+        if (!isActiveAndEnabled)
+            return;
         interactionIndicator.SetActive(false);
     }
 
     public void Interact()
     {
+        if (!isActiveAndEnabled)
+            return;
         OnInteraction.Invoke();
     }
 }
