@@ -10,5 +10,6 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: ae67d9add4ef012479ef60a5e4d8b2ee, type: 3}
-  m_Name: CollectableItem3
+  m_Name: Buckwheat Collectable Item
   m_EditorClassIdentifier: 
+  icon: {fileID: 21300000, guid: 904b62f7b485ab7488826de9303c355e, type: 3}

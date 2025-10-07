@@ -15,7 +15,7 @@ public class CollectionDisplayerMB : MonoBehaviour
 
     private void DisplayItemCollected(CollectableItemSO collectedItem)
     {
-        Instantiate(collectedItemIconImagePrefab, collectedItemIconImagesRoot);
+        Instantiate(collectedItemIconImagePrefab, collectedItemIconImagesRoot).sprite = collectedItem.Icon;
     }
 
     private void DisplayCollectedItems()

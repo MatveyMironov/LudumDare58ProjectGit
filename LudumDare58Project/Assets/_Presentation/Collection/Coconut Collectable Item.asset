@@ -10,5 +10,6 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: ae67d9add4ef012479ef60a5e4d8b2ee, type: 3}
-  m_Name: CollectableItem2
+  m_Name: Coconut Collectable Item
   m_EditorClassIdentifier: 
+  icon: {fileID: 21300000, guid: d2d63a49be7cb13488c1a79934a65f97, type: 3}
