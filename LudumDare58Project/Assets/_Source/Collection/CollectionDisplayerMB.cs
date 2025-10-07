@@ -1,11 +1,11 @@
 using UnityEngine;
-using UnityEngine.UI;
 
 public class CollectionDisplayerMB : MonoBehaviour
 {
     [SerializeField] private CollectionMB displayedCollection;
-    [SerializeField] private Image collectedItemIconImagePrefab;
-    [SerializeField] private RectTransform collectedItemIconImagesRoot;
+    [SerializeField] private CollectableItemIconDisplayerMB collectableItemDisplayerPrefab;
+    [SerializeField] private RectTransform collectableItemDisplayersRoot;
+    [SerializeField] private CollectableItemViewDisplayerMB collectableItemViewDisplayerPrefab;
 
     private void Start()
     {
@@ -15,7 +15,8 @@ public class CollectionDisplayerMB : MonoBehaviour
 
     private void DisplayItemCollected(CollectableItemSO collectedItem)
     {
-        Instantiate(collectedItemIconImagePrefab, collectedItemIconImagesRoot).sprite = collectedItem.Icon;
+        var collectableItemDisplayer = Instantiate(collectableItemDisplayerPrefab, collectableItemDisplayersRoot);
+        collectableItemDisplayer.DisplayCollectableItem(collectedItem, collectableItemViewDisplayerPrefab);
     }
 
     private void DisplayCollectedItems()

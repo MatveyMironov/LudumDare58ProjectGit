@@ -91,5 +91,5 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   displayedCollection: {fileID: 0}
-  collectedItemIconImagePrefab: {fileID: 3917173551353223141, guid: e88148501b601d54fa0c0ea825178316, type: 3}
-  collectedItemIconImagesRoot: {fileID: 9057920933117444789}
+  collectableItemDisplayerPrefab: {fileID: 0}
+  collectableItemDisplayersRoot: {fileID: 9057920933117444789}
