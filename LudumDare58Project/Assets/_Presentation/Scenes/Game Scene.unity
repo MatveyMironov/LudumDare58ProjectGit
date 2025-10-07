@@ -389,38 +389,6 @@ RectTransform:
   m_CorrespondingSourceObject: {fileID: 4192542085942948081, guid: 47733ea480d63cd4a8ec070ab13484b9, type: 3}
   m_PrefabInstance: {fileID: 9510463}
   m_PrefabAsset: {fileID: 0}
---- !u!1 &11600339
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 11600340}
-  m_Layer: 0
-  m_Name: ---- Puzzles ----
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &11600340
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 11600339}
-  serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children:
-  - {fileID: 2119929983}
-  m_Father: {fileID: 986909657}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &14756931
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -3576,6 +3544,7 @@ Transform:
   - {fileID: 1011704048}
   - {fileID: 248648641}
   - {fileID: 1433266453}
+  - {fileID: 365726537}
   m_Father: {fileID: 986909657}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &288345487
@@ -4039,7 +4008,7 @@ GameObject:
   - component: {fileID: 365726537}
   - component: {fileID: 365726538}
   m_Layer: 0
-  m_Name: Incorrect Guess Cutscene
+  m_Name: Wrong Bush Cutscene
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -4053,12 +4022,12 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 365726536}
   serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 2119929983}
+  m_Father: {fileID: 278620805}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &365726538
 MonoBehaviour:
@@ -6964,7 +6933,7 @@ PrefabInstance:
     - target: {fileID: 2185198717799291225, guid: 4c796683ccf2f6a42b1e825211d19796, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
-      objectReference: {fileID: 2119929984}
+      objectReference: {fileID: 1053848350}
     - target: {fileID: 2185198717799291225, guid: 4c796683ccf2f6a42b1e825211d19796, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
       value: 2
@@ -7659,7 +7628,7 @@ PrefabInstance:
     - target: {fileID: 2185198717799291225, guid: 4c796683ccf2f6a42b1e825211d19796, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
-      objectReference: {fileID: 2119929984}
+      objectReference: {fileID: 1053848350}
     - target: {fileID: 2185198717799291225, guid: 4c796683ccf2f6a42b1e825211d19796, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
       value: 2
@@ -9501,7 +9470,6 @@ Transform:
   - {fileID: 786575449}
   - {fileID: 278620805}
   - {fileID: 896617610}
-  - {fileID: 11600340}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &993709621
@@ -9996,6 +9964,7 @@ GameObject:
   - component: {fileID: 1053848347}
   - component: {fileID: 1053848349}
   - component: {fileID: 1053848348}
+  - component: {fileID: 1053848350}
   m_Layer: 0
   m_Name: Forest Puzzle Panel
   m_TagString: Untagged
@@ -10019,7 +9988,6 @@ RectTransform:
   - {fileID: 1944076022}
   - {fileID: 648575853}
   - {fileID: 711236973}
-  - {fileID: 1170696814}
   m_Father: {fileID: 2091299862}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
@@ -10065,6 +10033,91 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1053848346}
   m_CullTransparentMesh: 1
+--- !u!114 &1053848350
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1053848346}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1a9dc168ab2e9a248ab3acd7099ee875, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  image: {fileID: 1765076906}
+  sprites:
+  - {fileID: 21300000, guid: 4fe3831d449777b43a1bd23562f2ebe1, type: 3}
+  - {fileID: 21300000, guid: 66db4062ed0c8d343b635c3e75547fa7, type: 3}
+  - {fileID: 21300000, guid: 54347e202c183aa439e57d492882e318, type: 3}
+  - {fileID: 21300000, guid: 797e0d3a78e71454d947340676291e4e, type: 3}
+  correctIndex: 2
+  OnCorrectGuessMade:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 1053848346}
+        m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
+        m_MethodName: SetActive
+        m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 2103359250}
+        m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
+        m_MethodName: SetActive
+        m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 1
+        m_CallState: 2
+      - m_Target: {fileID: 105562671}
+        m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
+        m_MethodName: SetActive
+        m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 1139206548}
+        m_TargetAssemblyTypeName: UnityEngine.InputSystem.PlayerInput, Unity.InputSystem
+        m_MethodName: ActivateInput
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 1
+        m_CallState: 2
+  OnIncorrectGuessMade:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 365726538}
+        m_TargetAssemblyTypeName: CutsceneController_MB, Assembly-CSharp
+        m_MethodName: StartCutscene
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 1
+        m_CallState: 2
 --- !u!1 &1058786051
 GameObject:
   m_ObjectHideFlags: 0
@@ -11288,11 +11341,11 @@ PrefabInstance:
   serializedVersion: 2
   m_Modification:
     serializedVersion: 3
-    m_TransformParent: {fileID: 1053848347}
+    m_TransformParent: {fileID: 2091299862}
     m_Modifications:
     - target: {fileID: 2646679763108841683, guid: ed9adccc862df014e9e92e7da14a5cb6, type: 3}
       propertyPath: m_Name
-      value: Subtitle Tab
+      value: Wrong Bush Subtitle Tab
       objectReference: {fileID: 0}
     - target: {fileID: 2646679763108841683, guid: ed9adccc862df014e9e92e7da14a5cb6, type: 3}
       propertyPath: m_IsActive
@@ -11348,15 +11401,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8815100197013009292, guid: ed9adccc862df014e9e92e7da14a5cb6, type: 3}
       propertyPath: m_LocalRotation.x
-      value: 0
+      value: -0
       objectReference: {fileID: 0}
     - target: {fileID: 8815100197013009292, guid: ed9adccc862df014e9e92e7da14a5cb6, type: 3}
       propertyPath: m_LocalRotation.y
-      value: 0
+      value: -0
       objectReference: {fileID: 0}
     - target: {fileID: 8815100197013009292, guid: ed9adccc862df014e9e92e7da14a5cb6, type: 3}
       propertyPath: m_LocalRotation.z
-      value: 0
+      value: -0
       objectReference: {fileID: 0}
     - target: {fileID: 8815100197013009292, guid: ed9adccc862df014e9e92e7da14a5cb6, type: 3}
       propertyPath: m_AnchoredPosition.x
@@ -17531,7 +17584,7 @@ PrefabInstance:
     - target: {fileID: 2185198717799291225, guid: 4c796683ccf2f6a42b1e825211d19796, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
-      objectReference: {fileID: 2119929984}
+      objectReference: {fileID: 1053848350}
     - target: {fileID: 2185198717799291225, guid: 4c796683ccf2f6a42b1e825211d19796, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
       value: 2
@@ -22109,6 +22162,7 @@ RectTransform:
   - {fileID: 797343285}
   - {fileID: 1247695517}
   - {fileID: 1144990203}
+  - {fileID: 1170696814}
   - {fileID: 472828349}
   - {fileID: 1053848347}
   - {fileID: 877389711}
@@ -22828,124 +22882,6 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!1 &2119929982
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 2119929983}
-  - component: {fileID: 2119929984}
-  m_Layer: 0
-  m_Name: Forest Puzzle
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &2119929983
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2119929982}
-  serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children:
-  - {fileID: 365726537}
-  m_Father: {fileID: 11600340}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &2119929984
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2119929982}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 1a9dc168ab2e9a248ab3acd7099ee875, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  image: {fileID: 1765076906}
-  sprites:
-  - {fileID: 21300000, guid: b98315f5db3f9504280557334e66d325, type: 3}
-  - {fileID: 21300000, guid: 317caf7216cd4e7429d28a480032e8e4, type: 3}
-  - {fileID: 21300000, guid: bd8bc144f3fbe0a4ca4a48b522cd9ff7, type: 3}
-  - {fileID: 21300000, guid: 5f8e17e103610594fa86acfac4b6fd58, type: 3}
-  correctIndex: 2
-  OnCorrectGuessMade:
-    m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 1053848346}
-        m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
-        m_MethodName: SetActive
-        m_Mode: 6
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-      - m_Target: {fileID: 2103359250}
-        m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
-        m_MethodName: SetActive
-        m_Mode: 6
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 1
-        m_CallState: 2
-      - m_Target: {fileID: 105562671}
-        m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
-        m_MethodName: SetActive
-        m_Mode: 6
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-      - m_Target: {fileID: 1139206548}
-        m_TargetAssemblyTypeName: UnityEngine.InputSystem.PlayerInput, Unity.InputSystem
-        m_MethodName: ActivateInput
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 1
-        m_CallState: 2
-  OnIncorrectGuessMade:
-    m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 365726538}
-        m_TargetAssemblyTypeName: CutsceneController_MB, Assembly-CSharp
-        m_MethodName: StartCutscene
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 1
-        m_CallState: 2
 --- !u!1 &2120088615
 GameObject:
   m_ObjectHideFlags: 0
